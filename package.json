@@ -1,0 +1,27 @@
+{
+  "name": "tim-gilpin-portfolio",
+  "description": "Tim Gilpin Portfolio",
+  "version": "1.0.0",
+  "dependencies": {
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-sharp": "^2.1.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-helmet": "^5.2.0",
+    "tachyons": "^4.11.1",
+    "typeface-roboto": "0.0.54"
+  },
+  "keywords": [
+    "gatsby",
+    "sharp"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  }
+}

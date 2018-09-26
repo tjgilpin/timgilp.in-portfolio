@@ -1,0 +1,33 @@
+/* max width 1600 for project content */
+
+/* Page theme */
+._add-font-roboto { font-family: 'Roboto', sans-serif; }
+._add-bg-dark-metallic-blue { background: rgb(20, 25, 30); }
+._add-skew { transform: skew(0, -3deg); transform-origin: top left; }
+._add-skew-rev { transform: skew(0, 3deg); }
+/* Project themes */
+._add-bg-recordstore { background: rgb( 255, 255, 255 ); }
+._add-h3-recordstore { color: rgb(208, 2, 27); }
+._add-p-recordstore { color: rgba(0, 0, 0, .6); }
+._add-bg-bbmp { background: rgb(44, 113, 146); }
+._add-h3-bbmp { color: rgb(138, 208, 221); }
+._add-p-bbmp { color: rgba(255, 255, 255, .8); }
+._add-bg-umg { background: rgb( 255, 255, 255 ); }
+._add-h3-umg { color: rgb(74, 144, 226); }
+._add-p-umg { color: rgba(0, 0, 0, .6); }
+._add-bg-beatles { background: rgb(222, 219, 200); }
+._add-h3-beatles { color: rgb(88, 155, 25); }
+._add-p-beatles { color: rgba(0, 0, 0, .8); }
+._add-bg-worship { background: rgb(25, 155, 185); }
+._add-h3-worship { color: rgb(165, 234, 255); }
+._add-p-worship { color: rgb(255, 255, 255); }
+._add-bg-massive { background: rgb(195, 161, 112); }
+._add-h3-massive { color: rgb(217, 83, 30); }
+._add-p-massive { color: rgba(0, 0, 0, .8); }
+
+.gatsby-image-wrapper picture img {
+  object-position: top center !important;
+}
+
+
+
