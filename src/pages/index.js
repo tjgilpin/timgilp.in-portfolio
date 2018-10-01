@@ -7,9 +7,9 @@ import "../css/additional.css"
 require("typeface-roboto")
 
 const sectionContainerWrapper =
-"flex justify-center _add-skew _add-bg-"
+"flex justify-center nt1 _add-skew _add-bg-"
 const sectionContainer =
-"w-100 mw9 mh2 mt5 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
+"w-100 mw9 mh2 mt6 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
 "f1 fw3 mt0 mb4 _add-h3-"
 const sectionContent = 
@@ -21,10 +21,12 @@ const sectionImageContainer =
 // justify-between
 const sectionImageDesktop =
 "w-50-m w-50-l pl4-l"
+const sectionImageTablet =
+"w-34-m w-34-l pl4-m pl4-l"
 const sectionImageMobile =
 "w-25-m w-25-l pl4-m pl4-l"
 const sectionImage =
-"aspect-ratio aspect-ratio--8x5 pb0-m h-auto-m pb0-l h-auto-l mb4 ba b--light-gray"
+"aspect-ratio aspect-ratio--8x5 pb0-m h-auto-m pb0-l h-auto-l mb4 ba b--black-10"
 
 const Portfolio = ({ data }) => (
   <React.Fragment>
@@ -111,7 +113,24 @@ const Portfolio = ({ data }) => (
               UI/UX Design for a leading publisher of music resources for church choirs, kids ministry and worship. Project included extending upon existing white label platform functionality&mdash;mapping out of complex checkout user journey workflows allowing for tax exemptions for churches and non standard payment methods, user licensing of digital products, subscription products, video and audio content and more.
             </p>
             <div className={sectionImageContainer}>
-              imargghhh containment
+              <div className={sectionImageDesktop}>
+                <Link to="./bbmp-desktop-home-no-carousel">
+                  <Img
+                    fluid={data.bbmpDesktopHomeNoCarousel.childImageSharp.fluid}
+                    title={`Brentwood Benson Music Publishing`}
+                    className={sectionImage}
+                  />
+                </Link>
+              </div>  
+              <div className={sectionImageTablet}>
+                <Link to="./bbmp-tablet-xmas-search">
+                  <Img
+                    fluid={data.bbmpTabletXmasSearch.childImageSharp.fluid}
+                    title={`Brentwood Benson Music Publishing`}
+                    className={sectionImage}
+                  />
+                </Link>
+              </div>              
             </div>
           </div>
         </div>
@@ -269,6 +288,20 @@ export const query = graphql`
       }
     }
     recordstoreMobileNavigation: file(relativePath: { regex: "/recordstore-mobile-navigation/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bbmpDesktopHomeNoCarousel: file(relativePath: { regex: "/bbmp-desktop-no-carousel.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bbmpTabletXmasSearch: file(relativePath: { regex: "/bbmp-tablet-xmas-search.png/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
