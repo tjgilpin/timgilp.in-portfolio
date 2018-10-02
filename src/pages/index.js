@@ -7,7 +7,7 @@ import "../css/additional.css"
 require("typeface-roboto")
 
 const sectionContainerWrapper =
-"flex justify-center nt1 _add-skew _add-bg-"
+"flex justify-center nt1 debug _add-skew _add-bg-"
 const sectionContainer =
 "w-100 mw9 mh2 mt6 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
@@ -26,29 +26,40 @@ const sectionImageTablet =
 const sectionImageMobile =
 "w-25-m w-25-l pl4-m pl4-l"
 const sectionImage =
-"aspect-ratio aspect-ratio--8x5 pb0-m h-auto-m pb0-l h-auto-l mb4 ba b--black-10"
+"aspect-ratio aspect-ratio--8x5 shadow-hover pb0-m h-auto-m pb0-l h-auto-l mb4 ba b--black-10"
+const introLink = 
+"bb no-underline dim _add-link-"
+
+
+// const linkImage =
+// "borderImage: url('../images/link.svg')"
+
 
 const Portfolio = ({ data }) => (
   <React.Fragment>
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
     <div className="flex flex-column" style={{ scrollBehavior: "smooth", overflowY: "scroll" }}>
 
-      <div id="hi-i'm-tim" className="">
-        <h1 className="f1 lh-solid">
-          Hi I&#8217;m Tim &ndash;
-        </h1>
-        <h2 className="f2 lh-solid">
-          <s>I design stuff</s>
-          <s>I build things</s>
-          I deliver UI/UX digital projects, solutions &amp; strategy
-        </h2>
-        <h2 className="f2 fw3">
-          Recent clients / projects include <Link to="#recordstore" className="dark-red">Recordstore</Link>, <Link to="#bbmp">Brentwood Benson Music Publishing</Link>, <Link to="#umg">Universal Music Group</Link> <Link to="#beatles">The Beatles</Link>, <Link to="#worship">Worship Charts</Link> and <Link to="#massive">Massive Attack</Link>
-        </h2>    
-      </div>          
+      <div className="flex justify-center">
+        <div id="hi-i'm-tim" className="moon-gray mw7 mb3">
+          <h1 className="f-headline fw5 mb0 lh-solid">
+            Hi I&#8217;m Tim &ndash;
+          </h1>
+          <h1 className="f-subheadline fw5 mt3 lh-solid">
+            <span className="_add-animate-1-remove">
+              <span className="_add-animate-1">I design stuff</span>
+            </span>
+            <span className="_add-animate-2">I build things</span>
+            <span className="_add-animate-3">I deliver UI/UX digital projects, solutions &amp; strategy</span>
+          </h1>
+          <h2 className="f1 fw4 lh-title">
+            Recent clients / projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson Music Publishing</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
+          </h2>    
+        </div>          
+      </div>
 
-      <div id="recordstore" className={`${sectionContainerWrapper}recordstore z-5`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}recordstore z-5`}>
+        <div id="recordstore" className={sectionContainer}>
           <h3 className={`${sectionHeading}recordstore`}>
             Recordstore
           </h3>
@@ -103,8 +114,8 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
-      <div id="bbmp" className={`${sectionContainerWrapper}bbmp z-4`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}bbmp z-4`}>
+        <div id="bbmp" className={sectionContainer}>
           <h3 className={`${sectionHeading}bbmp`}>
             Brentwood Benson Music Publishing
           </h3>
@@ -136,8 +147,8 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
-      <div id="umg" className={`${sectionContainerWrapper}umg z-3`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}umg z-3`}>
+        <div id="umg" className={sectionContainer}>
           <h3 className={`${sectionHeading}umg`}>
             Universal Music Group
           </h3>
@@ -152,8 +163,8 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
-      <div id="beatles" className={`${sectionContainerWrapper}beatles z-2`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}beatles z-2`}>
+        <div id="beatles" className={sectionContainer}>
           <h3 className={`${sectionHeading}beatles`}>
             The Beatles
           </h3>
@@ -185,8 +196,8 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
-      <div id="worship" className={`${sectionContainerWrapper}worship z-1`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}worship z-1`}>
+        <div id="worship" className={sectionContainer}>
           <h3 className={`${sectionHeading}worship`}>
             Worship Charts
           </h3>
@@ -209,8 +220,8 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
-      <div id="massive" className={`${sectionContainerWrapper}massive z-0`}>
-        <div className={sectionContainer}>
+      <div className={`${sectionContainerWrapper}massive z-0`}>
+        <div id="massive" className={sectionContainer}>
           <h3 className={`${sectionHeading}massive`}>
             Massive Attack
           </h3>
