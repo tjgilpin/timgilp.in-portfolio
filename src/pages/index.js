@@ -7,7 +7,7 @@ import "../css/additional.css"
 require("typeface-roboto")
 
 const sectionContainerWrapper =
-"flex justify-center nt1 debug _add-skew _add-bg-"
+"flex justify-center nt1 _add-skew _add-bg-"
 const sectionContainer =
 "w-100 mw9 mh2 mt6 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
@@ -30,11 +30,6 @@ const sectionImage =
 const introLink = 
 "bb no-underline dim _add-link-"
 
-
-// const linkImage =
-// "borderImage: url('../images/link.svg')"
-
-
 const Portfolio = ({ data }) => (
   <React.Fragment>
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
@@ -46,11 +41,7 @@ const Portfolio = ({ data }) => (
             Hi I&#8217;m Tim &ndash;
           </h1>
           <h1 className="f-subheadline fw5 mt3 lh-solid">
-            <span className="_add-animate-1-remove">
-              <span className="_add-animate-1">I design stuff</span>
-            </span>
-            <span className="_add-animate-2">I build things</span>
-            <span className="_add-animate-3">I deliver UI/UX digital projects, solutions &amp; strategy</span>
+            I deliver UI/UX digital projects, solutions &amp; strategy
           </h1>
           <h2 className="f1 fw4 lh-title">
             Recent clients / projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson Music Publishing</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
