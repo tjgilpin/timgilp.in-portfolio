@@ -37,14 +37,14 @@ const Portfolio = ({ data }) => (
 
       <div className="flex justify-center">
         <div id="hi-i'm-tim" className="moon-gray mw7 mb3">
-          <h1 className="f-headline fw5 mb0 lh-solid">
+          <h1 className="f-subheadline fw5 mb0 lh-solid">
             Hi I&#8217;m Tim &ndash;
           </h1>
           <h1 className="f-subheadline fw5 mt3 lh-solid">
             I deliver UI/UX digital projects, solutions &amp; strategy
           </h1>
           <h2 className="f1 fw4 lh-title">
-            Recent clients / projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson Music Publishing</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
+            Recent clients and projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
           </h2>    
         </div>          
       </div>

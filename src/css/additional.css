@@ -73,7 +73,9 @@
   0 4px 9px 4px;       /* outset */
 }
 
-/* Set image position at top for small screen image container crop hack  */
+/* Set image position at top for small screen image container crop  */
 .gatsby-image-wrapper picture img {
   object-position: top center !important;
 }
+
+/* Macbook Screen Size (1280w) - 3.8 / 2.35 rem for heading / sub with max-width 53em */
