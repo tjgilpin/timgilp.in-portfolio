@@ -11,14 +11,13 @@ const sectionContainerWrapper =
 const sectionContainer =
 "w-100 mw9 mh2 mt6 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
-"f1 fw3 mt0 mb4 _add-h3-"
+"fw4 mt0 mb4 f1 _add-h3-"
 const sectionContent = 
 "flex flex-column flex-row-l justify-between"
 const sectionParagraph =
 "f4 fw3 lh-copy mb3 mt0 w-40-l _add-p-"
 const sectionImageContainer =
 "flex flex-column flex-row-m flex-row-l w-60-l"
-// justify-between
 const sectionImageDesktop =
 "w-50-m w-50-l pl4-l"
 const sectionImageTablet =
@@ -35,17 +34,17 @@ const Portfolio = ({ data }) => (
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
     <div className="flex flex-column" style={{ scrollBehavior: "smooth", overflowY: "scroll" }}>
 
-      <div className="flex justify-center">
-        <div id="hi-i'm-tim" className="moon-gray mw7 mb3">
-          <h1 className="f-subheadline fw5 mb0 lh-solid">
-            Hi I&#8217;m Tim &ndash;
+      <div className="flex justify-center mb5">
+        <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh2 mh4-m mh5-l">
+          <h1 className="_add-heading fw5 mb0 mt5 lh-solid">
+            Hi I&#8217;m Tim&mdash;
           </h1>
-          <h1 className="f-subheadline fw5 mt3 lh-solid">
-            I deliver UI/UX digital projects, solutions &amp; strategy
-          </h1>
-          <h2 className="f1 fw4 lh-title">
+          <h2 className="_add-subheading fw5 mt3 mb0 lh-solid">
+            I deliver UI/UX projects, solutions and strategy
+          </h2>
+          <h3 className="_add-bigcopy fw3 mt4 lh-title">
             Recent clients and projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
-          </h2>    
+          </h3>    
         </div>          
       </div>
 
