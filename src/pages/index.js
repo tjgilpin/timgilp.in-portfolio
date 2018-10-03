@@ -9,7 +9,7 @@ require("typeface-roboto")
 const sectionContainerWrapper =
 "flex justify-center nt1 _add-skew _add-bg-"
 const sectionContainer =
-"w-100 mw9 mh2 mt6 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
+"w-100 mw9 mh2 mt5 pt4 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
 "fw4 mt0 mb4 f1 _add-h3-"
 const sectionContent = 
