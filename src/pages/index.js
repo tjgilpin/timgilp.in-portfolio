@@ -18,12 +18,16 @@ const sectionParagraph =
 "f4 fw3 lh-copy mb3 mt0 w-40-l _add-p-"
 const sectionImageContainer =
 "flex flex-column flex-row-m flex-row-l w-60-l"
+const sectionImageContainerLeft =
+"flex flex-column flex-row-m justify-between-m flex-row-l w-60-l"
 const sectionImageDesktop =
 "w-50-m w-50-l pl4-l"
 const sectionImageTablet =
 "w-34-m w-34-l pl4-m pl4-l"
 const sectionImageMobile =
 "w-25-m w-25-l pl4-m pl4-l"
+const sectionImageMobileAll =
+"w-20-m w-25-l pl4-l"
 const sectionImage =
 "aspect-ratio aspect-ratio--8x5 shadow-hover pb0-m h-auto-m pb0-l h-auto-l mb4 ba b--black-10"
 const introLink = 
@@ -42,7 +46,7 @@ const Portfolio = ({ data }) => (
           <h2 className="_add-subheading fw5 mt3 mb0 lh-solid">
             I deliver UI/UX projects, solutions and strategy
           </h2>
-          <h3 className="_add-bigcopy fw3 mt4 lh-title">
+          <h3 className="_add-bigcopy fw3 mt4 lh-title w-90-l">
             Recent clients and projects include <Link to="#recordstore" className={`${introLink}recordstore`}>Recordstore</Link>, <Link to="#bbmp" className={`${introLink}bbmp`}>Brentwood Benson</Link>, <Link to="#umg" className={`${introLink}umg`}>Universal Music Group</Link>, <Link to="#beatles" className={`${introLink}beatles`}>The Beatles</Link>, <Link to="#worship" className={`${introLink}worship`}>Worship Charts</Link> and <Link to="#massive" className={`${introLink}massive`}>Massive Attack</Link>
           </h3>    
         </div>          
@@ -146,8 +150,44 @@ const Portfolio = ({ data }) => (
             <p className={`${sectionParagraph}umg`}>
               UI/UX Design concepts for guest checkout process for Universal Music Group global white label e-commerce platform.
             </p>
-            <div className={sectionImageContainer}>
-              imargghhh containment
+            <div className={sectionImageContainerLeft}>
+              <div className={sectionImageMobileAll}>
+                <Link to="./recordstore-desktop-home">
+                  <Img
+                    fluid={data.umgMobileBasket.childImageSharp.fluid}
+                    title={`Recordstore`}
+                    className={sectionImage}
+                    // style={{ paddingLeft: "0"}}
+                  />
+                </Link>
+              </div>
+              <div className={sectionImageMobileAll}>
+                <Link to="./recordstore-desktop-home">
+                  <Img
+                    fluid={data.umgMobileLogin.childImageSharp.fluid}
+                    title={`Recordstore`}
+                    className={sectionImage}
+                  />
+                </Link>
+              </div>
+              <div className={sectionImageMobileAll}>
+                <Link to="./recordstore-desktop-home">
+                  <Img
+                    fluid={data.umgMobilePayment.childImageSharp.fluid}
+                    title={`Recordstore`}
+                    className={sectionImage}
+                  />
+                </Link>
+              </div>
+              <div className={sectionImageMobileAll}>
+                <Link to="./recordstore-desktop-home">
+                  <Img
+                    fluid={data.umgMobileConfirmation.childImageSharp.fluid}
+                    title={`Recordstore`}
+                    className={sectionImage}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -234,6 +274,13 @@ const Portfolio = ({ data }) => (
         </div>
       </div>
 
+      <div className="light-silver mb4 mt5 flex justify-center ">
+        <p className="center">
+          &copy; Tim Gilpin and respective copyright holders.
+          &nbsp;
+          <a href="https://www.youtube.com/watch?v=_yAwTGvqFUg" className="dim gray">Cookies</a>
+        </p>
+      </div>
     </div>
   </React.Fragment>  
 )
@@ -295,6 +342,34 @@ export const query = graphql`
         }
       }
     }
+    umgMobileBasket: file(relativePath: { regex: "/umg-mobile-basket/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    umgMobileLogin: file(relativePath: { regex: "/umg-mobile-login/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    umgMobilePayment: file(relativePath: { regex: "/umg-mobile-payment/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    umgMobileConfirmation: file(relativePath: { regex: "/umg-mobile-confirmation-page.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     bbmpDesktopHomeNoCarousel: file(relativePath: { regex: "/bbmp-desktop-no-carousel.png/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
@@ -302,7 +377,7 @@ export const query = graphql`
         }
       }
     }
-    bbmpTabletXmasSearch: file(relativePath: { regex: "/bbmp-tablet-xmas-search.png/" }) {
+    bbmpTabletXmasSearch: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid

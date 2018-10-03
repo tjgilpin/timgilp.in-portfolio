@@ -29,9 +29,9 @@
   0 4px 9px 4px;       /* outset */
 }
 
-._add-bg-umg { background: rgb( 255, 255, 255 ); }
+._add-bg-umg { background: rgb( 45, 48, 56 ); }
 ._add-h3-umg { color: rgb(74, 144, 226); }
-._add-p-umg { color: rgba(0, 0, 0, .6); }
+._add-p-umg { color: rgba(255, 255, 255, .8); }
 ._add-link-umg {
   color: rgb(74, 144, 226);
   border-image: url("../images/link-umg.svg")
