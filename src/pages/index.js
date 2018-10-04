@@ -275,7 +275,7 @@ const Portfolio = ({ data }) => (
       </div>
 
       <div className="light-silver mb4 mt5 flex justify-center ">
-        <p className="center ph2">
+        <p className="ph2">
           &copy; Tim Gilpin and respective copyright holders.
         </p>
       </div>
