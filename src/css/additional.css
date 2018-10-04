@@ -80,19 +80,16 @@
 
 /* Macbook Screen Size (1280w) - 3.8 / 2.35 rem for heading / sub golden ratio with max-width 53em */
 
-._add-heading {
-  font-size: 5.5rem;
-}
+._add-heading { font-size: 3.4rem; }
+._add-subheading { font-size: 2.3rem; }
+._add-bigcopy { font-size: 1.8rem; }
 
-._add-subheading {
-  font-size: 3.4rem;
-}
+@media (min-width: 600px) {
+  ._add-heading { font-size: 5.5rem; }
+  ._add-subheading { font-size: 3.4rem; }
+  ._add-bigcopy { font-size: 2.1rem; }
+  }  
 
-._add-bigcopy {
-  /* font-size: 2.3rem; */
-  font-size: 2.1rem;
-}
 
-._add-intro-width {
-  max-width: 42rem;
-}
+._add-intro-width { max-width: 42rem; }
+

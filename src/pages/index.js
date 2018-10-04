@@ -40,7 +40,7 @@ const Portfolio = ({ data }) => (
 
       <div className="flex justify-center mb5">
         <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh2 mh4-m mh5-l">
-          <h1 className="_add-heading fw5 mb0 mt5 lh-solid">
+          <h1 className="_add-heading fw5 mb0 mt5-l lh-solid">
             Hi I&#8217;m Tim&mdash;
           </h1>
           <h2 className="_add-subheading fw5 mt3 mb0 lh-solid">
