@@ -3,17 +3,8 @@ import Img from 'gatsby-image'
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
 
-// handleKeyUp = e => {
-//   e.preventDefault()
-//   const { keyCode } = e
-//   if (keyCode === 27) {
-//     // Escape key
-//     this.setState({ showLightbox: false })
-//   }
-// }
-
-
 const ImagePage = ({ linkage, imgsize, wrapperstyle }) => (
+  
   <React.Fragment>
     <Helmet bodyAttributes={{style: "background: #000" }} />
     <div style={{display: 'block'}}>
