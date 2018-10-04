@@ -2,19 +2,19 @@ import React from 'react'
 import ImagePage from '../components/imagepage'
 import { graphql } from "gatsby"
 
-const imageWrapper = "360"
+const imageWrapper = "600"
 
 const IndexPage = ({ data }) => (
-  <ImagePage linkage="./#recordstore" imgsize={data.recordstoreMobileProduct.childImageSharp.fluid} wrapperstyle={imageWrapper} />
+  <ImagePage linkage="./#bbmp" imgsize={data.bbmpTabletXmas.childImageSharp.fluid} wrapperstyle={imageWrapper} />
 )
 
 export default IndexPage
 
 export const query = graphql`
   query {
-    recordstoreMobileProduct: file(relativePath: { regex: "/recordstore-mobile-product/" }) {
+    bbmpTabletXmas: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
       childImageSharp {
-        fluid(maxWidth: 720) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }

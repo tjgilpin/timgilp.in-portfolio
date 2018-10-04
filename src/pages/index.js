@@ -119,18 +119,18 @@ const Portfolio = ({ data }) => (
             </p>
             <div className={sectionImageContainer}>
               <div className={sectionImageDesktop}>
-                <Link to="./bbmp-desktop-home-no-carousel">
+                <Link to="./bbmp-desktop-home">
                   <Img
-                    fluid={data.bbmpDesktopHomeNoCarousel.childImageSharp.fluid}
+                    fluid={data.bbmpDesktopHome.childImageSharp.fluid}
                     title={`Brentwood Benson Music Publishing`}
                     className={sectionImage}
                   />
                 </Link>
               </div>  
               <div className={sectionImageTablet}>
-                <Link to="./bbmp-tablet-xmas-search">
+                <Link to="./bbmp-tablet-xmas">
                   <Img
-                    fluid={data.bbmpTabletXmasSearch.childImageSharp.fluid}
+                    fluid={data.bbmpTabletXmas.childImageSharp.fluid}
                     title={`Brentwood Benson Music Publishing`}
                     className={sectionImage}
                   />
@@ -155,9 +155,8 @@ const Portfolio = ({ data }) => (
                 <Link to="./universal-mobile-basket">
                   <Img
                     fluid={data.umgMobileBasket.childImageSharp.fluid}
-                    title={`Recordstore`}
+                    title={`Universal Music`}
                     className={sectionImage}
-                    // style={{ paddingLeft: "0"}}
                   />
                 </Link>
               </div>
@@ -165,7 +164,7 @@ const Portfolio = ({ data }) => (
                 <Link to="./universal-mobile-login">
                   <Img
                     fluid={data.umgMobileLogin.childImageSharp.fluid}
-                    title={`Recordstore`}
+                    title={`Universal Music`}
                     className={sectionImage}
                   />
                 </Link>
@@ -174,7 +173,7 @@ const Portfolio = ({ data }) => (
                 <Link to="./universal-mobile-payment">
                   <Img
                     fluid={data.umgMobilePayment.childImageSharp.fluid}
-                    title={`Recordstore`}
+                    title={`Universal Music`}
                     className={sectionImage}
                   />
                 </Link>
@@ -183,7 +182,7 @@ const Portfolio = ({ data }) => (
                 <Link to="./universal-mobile-confirmation">
                   <Img
                     fluid={data.umgMobileConfirmation.childImageSharp.fluid}
-                    title={`Recordstore`}
+                    title={`Universal Music`}
                     className={sectionImage}
                   />
                 </Link>
@@ -368,14 +367,14 @@ export const query = graphql`
         }
       }
     }
-    bbmpDesktopHomeNoCarousel: file(relativePath: { regex: "/bbmp-desktop-no-carousel.png/" }) {
+    bbmpDesktopHome: file(relativePath: { regex: "/bbmp-desktop-no-carousel.png/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    bbmpTabletXmasSearch: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
+    bbmpTabletXmas: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
