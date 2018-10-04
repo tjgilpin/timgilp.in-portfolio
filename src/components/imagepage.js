@@ -18,8 +18,8 @@ const ImagePage = ({ linkage, imgsize, wrapperstyle }) => (
     <Helmet bodyAttributes={{style: "background: #000" }} />
     <div style={{display: 'block'}}>
       <Link to={linkage} replace>
-        <div style={{ maxWidth: wrapperstyle + 'px' }}>
-          <span style={{ position: "absolute", left: "10px", zIndex: "100", fontSize: "2rem", width: "" }}>×</span>
+        <span style={{ position: "absolute", right: "10px", top: "10px", zIndex: "100", fontSize: "1.65rem", background: "rgba(0, 0, 0, 0.8)", color: "rgb(255, 255, 255)", width: "2rem", height: "2rem", textAlign: "center", borderRadius: "50%" }}>×</span>
+        <div style={{ maxWidth: wrapperstyle + 'px', margin: '0 auto', position: 'relative' }}>
           <Img fluid={imgsize} alt={`Recordstore`} />
         </div>   
       </Link>

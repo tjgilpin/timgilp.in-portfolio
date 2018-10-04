@@ -2,12 +2,10 @@ import React from 'react'
 import ImagePage from '../components/imagepage'
 import { graphql } from "gatsby"
 
-
-
-const imageStyle = "720"
+const imageWrapper = "360"
 
 const IndexPage = ({ data }) => (
-  <ImagePage linkage="./#recordstore" imgsize={data.recordstoreMobileProduct.childImageSharp.fluid} wrapperstyle={imageStyle} />
+  <ImagePage linkage="./#recordstore" imgsize={data.recordstoreMobileProduct.childImageSharp.fluid} wrapperstyle={imageWrapper} />
 )
 
 export default IndexPage
