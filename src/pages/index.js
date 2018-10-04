@@ -70,7 +70,7 @@ const Portfolio = ({ data }) => (
                     className={sectionImage}
                   />
                 </Link>                
-                <Link to="./recordstore-desktop-home">
+                <Link to="./recordstore-desktop-product">
                   <Img
                     fluid={data.recordstoreDesktopProduct.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -88,14 +88,14 @@ const Portfolio = ({ data }) => (
                 </Link>
               </div>
               <div className={sectionImageMobile}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./recordstore-mobile-basket">
                   <Img
                     fluid={data.recordstoreMobileBasket.childImageSharp.fluid}
                     title={`Recordstore`}
                     className={sectionImage}
                   />
                 </Link>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./recordstore-mobile-navigation">
                   <Img
                     fluid={data.recordstoreMobileNavigation.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -152,7 +152,7 @@ const Portfolio = ({ data }) => (
             </p>
             <div className={sectionImageContainerLeft}>
               <div className={sectionImageMobileAll}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./universal-mobile-basket">
                   <Img
                     fluid={data.umgMobileBasket.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -162,7 +162,7 @@ const Portfolio = ({ data }) => (
                 </Link>
               </div>
               <div className={sectionImageMobileAll}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./universal-mobile-login">
                   <Img
                     fluid={data.umgMobileLogin.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -171,7 +171,7 @@ const Portfolio = ({ data }) => (
                 </Link>
               </div>
               <div className={sectionImageMobileAll}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./universal-mobile-payment">
                   <Img
                     fluid={data.umgMobilePayment.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -180,7 +180,7 @@ const Portfolio = ({ data }) => (
                 </Link>
               </div>
               <div className={sectionImageMobileAll}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./universal-mobile-confirmation">
                   <Img
                     fluid={data.umgMobileConfirmation.childImageSharp.fluid}
                     title={`Recordstore`}
@@ -204,7 +204,7 @@ const Portfolio = ({ data }) => (
             </p>
             <div className={sectionImageContainer}>
               <div className={sectionImageDesktop}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./beatles-desktop-home">
                   <Img
                     fluid={data.beatlesDesktopHome.childImageSharp.fluid}
                     title={`The Beatles`}
@@ -213,7 +213,7 @@ const Portfolio = ({ data }) => (
                 </Link>                
               </div>
               <div className={sectionImageMobile}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./beatles-mobile-home">
                   <Img
                     fluid={data.beatlesMobileHome.childImageSharp.fluid}
                     title={`The Beatles`}
