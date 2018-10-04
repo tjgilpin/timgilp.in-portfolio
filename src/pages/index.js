@@ -79,7 +79,7 @@ const Portfolio = ({ data }) => (
                 </Link>
               </div>
               <div className={sectionImageMobile}>
-                <Link to="./recordstore-desktop-home">
+                <Link to="./recordstore-mobile-product">
                   <Img
                     fluid={data.recordstoreMobileProduct.childImageSharp.fluid}
                     title={`Recordstore`}
