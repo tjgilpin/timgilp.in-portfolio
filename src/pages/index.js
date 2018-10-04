@@ -275,10 +275,8 @@ const Portfolio = ({ data }) => (
       </div>
 
       <div className="light-silver mb4 mt5 flex justify-center ">
-        <p className="center">
+        <p className="center ph2">
           &copy; Tim Gilpin and respective copyright holders.
-          &nbsp;
-          <a href="https://www.youtube.com/watch?v=_yAwTGvqFUg" className="dim gray">Cookies</a>
         </p>
       </div>
     </div>
