@@ -9,9 +9,9 @@ require("typeface-roboto")
 const sectionContainerWrapper =
 "flex justify-center nt1 _add-skew _add-bg-"
 const sectionContainer =
-"w-100 mw9 mh2 mt5 pt4 mh4-m mh5-l nb4 nb5-m nb5-l _add-skew-rev"
+"w-100 mw9 mh2 mt4 pt4 mh4-m mh5-l nb4-m nb5-m nb5-l _add-skew-rev"
 const sectionHeading =
-"fw4 mt0 mb4 f1 _add-h3-"
+"fw4 mt0 mt3-m mt4-l mb4 f1 lh-solid _add-h3-"
 const sectionContent = 
 "flex flex-column flex-row-l justify-between"
 const sectionParagraph =
@@ -38,7 +38,7 @@ const Portfolio = ({ data }) => (
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
     <div className="flex flex-column" style={{ scrollBehavior: "smooth", overflowY: "scroll" }}>
 
-      <div className="flex justify-center mb5">
+      <div className="flex justify-center mb3 mb5-m mb5-l">
         <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh3 mh4-m mh5-l">
           <h1 className="_add-heading fw5 mb0 mt5-l lh-solid">
             Hi I&#8217;m Tim&mdash;
