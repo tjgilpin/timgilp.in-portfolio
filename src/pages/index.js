@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Layout from "../components/layout"
 import Helmet from "react-helmet"
 import "tachyons"
 import "../css/additional.css"
@@ -34,10 +35,9 @@ const introLink =
 "bb no-underline dim _add-link-"
 
 const Portfolio = ({ data }) => (
-  <React.Fragment>
+  <Layout>
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
     <div className="flex flex-column" style={{ scrollBehavior: "smooth", overflowY: "scroll" }}>
-
       <div className="flex justify-center mb3 mb5-m mb5-l">
         <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh3 mh4-m mh5-l">
           <h1 className="_add-heading fw5 mb0 mt5-l lh-solid">
@@ -279,7 +279,7 @@ const Portfolio = ({ data }) => (
         </p>
       </div>
     </div>
-  </React.Fragment>  
+  </Layout>
 )
   
 export default Portfolio
