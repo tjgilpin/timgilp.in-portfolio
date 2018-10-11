@@ -15,7 +15,7 @@ export const query = graphql`
     recordstoreMobileProduct: file(relativePath: { regex: "/recordstore-mobile-product/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

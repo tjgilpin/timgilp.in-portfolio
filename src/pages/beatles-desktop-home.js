@@ -15,7 +15,7 @@ export const query = graphql`
     beatlesDesktopHome: file(relativePath: { regex: "/beatles-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 1680) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

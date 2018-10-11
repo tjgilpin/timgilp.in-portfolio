@@ -15,7 +15,7 @@ export const query = graphql`
     bbmpTabletXmas: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

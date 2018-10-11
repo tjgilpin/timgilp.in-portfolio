@@ -307,105 +307,105 @@ export const query = graphql`
     recordstoreDesktopHome: file(relativePath: { regex: "/recordstore-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     recordstoreDesktopProduct: file(relativePath: { regex: "/recordstore-desktop-product/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     recordstoreMobileProduct: file(relativePath: { regex: "/recordstore-mobile-product-2x/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     recordstoreMobileBasket: file(relativePath: { regex: "/recordstore-mobile-basket/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     recordstoreMobileNavigation: file(relativePath: { regex: "/recordstore-mobile-navigation/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     umgMobileBasket: file(relativePath: { regex: "/umg-mobile-basket/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     umgMobileLogin: file(relativePath: { regex: "/umg-mobile-login/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     umgMobilePayment: file(relativePath: { regex: "/umg-mobile-payment/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     umgMobileConfirmation: file(relativePath: { regex: "/umg-mobile-confirmation-page.png/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     bbmpDesktopHome: file(relativePath: { regex: "/bbmp-desktop-no-carousel.png/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     bbmpTabletXmas: file(relativePath: { regex: "/bbmp-tablet-xmas-search/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     beatlesDesktopHome: file(relativePath: { regex: "/beatles-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     beatlesMobileHome: file(relativePath: { regex: "/beatles-mobile-home/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     worshipDesktopHome: file(relativePath: { regex: "/worship-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     massiveDesktopHome: file(relativePath: { regex: "/massive-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

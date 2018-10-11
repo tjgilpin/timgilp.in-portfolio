@@ -15,7 +15,7 @@ export const query = graphql`
     recordstoreMobileNavigation: file(relativePath: { regex: "/recordstore-mobile-navigation/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

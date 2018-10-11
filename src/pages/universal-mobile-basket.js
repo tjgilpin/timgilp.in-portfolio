@@ -15,7 +15,7 @@ export const query = graphql`
     umgMobileBasket: file(relativePath: { regex: "/umg-mobile-basket/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

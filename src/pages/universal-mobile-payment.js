@@ -15,7 +15,7 @@ export const query = graphql`
     umgMobilePayment: file(relativePath: { regex: "/umg-mobile-payment/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

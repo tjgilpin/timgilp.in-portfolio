@@ -15,7 +15,7 @@ export const query = graphql`
     worshipDesktopHome: file(relativePath: { regex: "/worship-desktop-home/" }) {
       childImageSharp {
         fluid(maxWidth: 3200) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

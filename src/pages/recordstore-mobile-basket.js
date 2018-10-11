@@ -15,7 +15,7 @@ export const query = graphql`
     recordstoreMobileBasket: file(relativePath: { regex: "/recordstore-mobile-basket/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

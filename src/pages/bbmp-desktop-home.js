@@ -15,7 +15,7 @@ export const query = graphql`
     bbmpDesktopHome: file(relativePath: { regex: "/bbmp-desktop-no-carousel/" }) {
       childImageSharp {
         fluid(maxWidth: 1280) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

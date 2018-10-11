@@ -15,7 +15,7 @@ export const query = graphql`
     recordstoreDesktopProduct: file(relativePath: { regex: "/recordstore-desktop-product/" }) {
       childImageSharp {
         fluid(maxWidth: 1840) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

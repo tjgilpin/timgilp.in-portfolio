@@ -15,7 +15,7 @@ export const query = graphql`
     umgMobileConfirmation: file(relativePath: { regex: "/umg-mobile-confirmation/" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
