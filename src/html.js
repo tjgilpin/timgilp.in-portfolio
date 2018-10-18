@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes}>
+      <html lang="en" {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -14,7 +14,7 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
         </head>
-        <body className="_add-bg-dark-metallic-blue _add-font-roboto" {...this.props.bodyAttributes}>
+        <body className="ma0 _add-bg-dark-metallic-blue _add-font-roboto" {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}
