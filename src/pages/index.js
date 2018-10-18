@@ -37,7 +37,7 @@ const introLink =
 const Portfolio = ({ data }) => (
   <Layout>
     <Helmet bodyAttributes={{class: "_add-font-roboto _add-bg-dark-metallic-blue" }} />
-    <div className="flex flex-column" style={{ scrollBehavior: "smooth", overflowY: "scroll" }}>
+    <div className="flex flex-column">
       <div className="flex justify-center mb3 mb5-m mb5-l">
         <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh3 mh4-m mh5-l">
           <h1 className="_add-heading fw5 mb0 mt5-l lh-solid">
