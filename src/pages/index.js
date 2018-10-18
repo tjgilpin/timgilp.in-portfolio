@@ -35,9 +35,7 @@ const introLink =
 "bb no-underline dim _add-link-"
 
 const Portfolio = ({ data }) => (
-
   <Layout>
-    <Helmet bodyAttributes={{style: "font-family: 'Roboto', Helvetica, Arial, sans-serif" }} />
     <div className="flex flex-column">
       <div className="flex justify-center mb3 mb5-m mb5-l">
         <div id="hi-i'm-tim" className="moon-gray mb3 _add-intro-width mh3 mh4-m mh5-l">
