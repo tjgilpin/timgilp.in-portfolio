@@ -2,11 +2,9 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
-import Layout from "../components/layout"
 
 const ImagePage = ({ linkage, imgsize, wrapperstyle }) => (
-  
-  <Layout>
+  <React.Fragment>
     <Helmet bodyAttributes={{style: "background: #000" }} />
     <Helmet bodyAttributes={{margin: "0" }} />
     <div style={{display: 'block'}}>
@@ -17,8 +15,7 @@ const ImagePage = ({ linkage, imgsize, wrapperstyle }) => (
         </div>   
       </Link>
     </div>
-  </Layout>
-
+  </React.Fragment>
 )
 
 export default ImagePage
