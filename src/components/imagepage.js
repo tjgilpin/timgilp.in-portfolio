@@ -1,12 +1,12 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
+import "tachyons"
+import "../css/additional.css"
+require("typeface-roboto")
 
 const ImagePage = ({ linkage, imgsize, wrapperstyle }) => (
   <React.Fragment>
-    <Helmet bodyAttributes={{style: "background: #000" }} />
-    <Helmet bodyAttributes={{margin: "0" }} />
     <div style={{display: 'block'}}>
       <Link to={linkage}>
         <span style={{ position: "fixed", right: "10px", top: "10px", zIndex: "100", fontSize: "1.2rem", fontWeight: "300", background: "rgba(0, 0, 0, 0.8)", color: "rgb(255, 255, 255)", width: "2rem", height: "2rem", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center" }}>×</span>
